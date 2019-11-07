@@ -5,20 +5,19 @@ import YOUTUBE_API_KEY from '../config/youtube.js';
 import thunk from 'redux-thunk';
 
 
-var handleVideoSearch = (q) => {
+var handleVideoSearch = (query) => {
   //TODO:  Write an asynchronous action to handle a video search!
-  var option = {
+  var options = {
     key: YOUTUBE_API_KEY,
-    query: q
+    query: query
   }
-  return （dispatch） =>  {
-  searchYouTube(option, (videos) => {
-      return {
-      dispatch(changeVideoList(videos));
+  return (dispatch) => {
+    searchYouTube(options, (videos) => {
       dispatch(changeVideo(videos[0]));
-      };
-    });
+      dispatch(changeVideoList(videos));
+    })
   }
 };
 
 export default handleVideoSearch;
+
