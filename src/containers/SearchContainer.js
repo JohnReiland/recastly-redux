@@ -24,11 +24,8 @@ export default SearchContainer;
 
 
 
-
-// var mapStateToProps = (state) => {
-//   return {
-//       items: state.items,
-//       hasErrored: state.itemsHasErrored,
-//       isLoading: state.itemsIsLoading
-//   };
-// };
+// var mapDispatchToProps = (dispatch) => ({
+//   handleInputChange: (query) => {
+//     dispatch(handleVideoSearch(query));
+//   }
+// })
