@@ -7,19 +7,7 @@ var App = () => (
 
   //this.getYouTubeVideos('react tutorials');
 
-  // getYouTubeVideos(query) {
-  //   var options = {
-  //     key: this.props.API_KEY,
-  //     query: query
-  //   };
 
-  //   this.props.searchYouTube(options, (videos) =>
-  //     this.setState({
-  //       videos: videos,
-  //       currentVideo: videos[0]
-  //     })
-  //   );
-  // }
 
   //TODO: swap out the React components below for the container components
   //  you wrote in the 'containers' directory.
@@ -28,19 +16,19 @@ var App = () => (
 <div>
   <nav className="navbar">
     <div className="col-md-6 col-md-offset-3">
-      <Search
+      <SearchContainer
       // getYouTubeVideos={this.getYouTubeVideos}
       />
     </div>
   </nav>
   <div className="row">
     <div className="col-md-7">
-      <VideoPlayer
+      <VideoPlayerContainer
       // video={this.state.currentVideo}
       />
     </div>
     <div className="col-md-5">
-      <VideoList
+      <VideoListContainer
         // handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
         // videos={this.state.videos}
       />
