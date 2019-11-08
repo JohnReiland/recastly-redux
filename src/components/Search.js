@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchContainer from '../containers/SearchContainer.js';
 
 
 var Search = ({handleInputChange}) => (
